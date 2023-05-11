@@ -1,0 +1,45 @@
+.announc {
+
+    .top {
+        margin: 0;
+        padding: 0;
+        background-color: #111;
+        color: #fff;
+        height: 2rem;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+        .iconDown {
+            cursor: pointer;
+        }
+    }
+    .menu {
+        position: absolute;
+        width: 100%;
+        .box {
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid lightgray;
+            width: 100%;
+            top: -24.5rem;
+            height: 22rem;
+            background-color: #0ff;
+            transition: all 1s ease;
+
+            &.active {
+                top: -4rem;
+            }
+            .left {
+
+            }
+            .right {
+
+            }
+        }
+    }
+}
