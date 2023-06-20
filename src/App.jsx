@@ -1,16 +1,18 @@
-import { useState } from 'react'
 import './App.scss'
 import Announcment from './component/Announcment/Announcment'
+import BestSellers from './component/BestSellers/BestSellers'
+import Header from './component/Header/Header'
 import Navbar from './component/Navbar/Navbar'
 
 function App() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className='app'>
-      <Announcment menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Announcment/>
       <Navbar/>
+      <Header/>
+      <BestSellers/>
     </div>
   )
 }

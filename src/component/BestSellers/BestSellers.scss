@@ -1,0 +1,38 @@
+.best {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        margin-top: 2rem;
+        font-size: 16px;
+    }
+    
+    .items{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        font-size: 10px;
+        gap: 40px;
+
+        .item {
+            border: 1px solid gray;
+            background-color: #fff;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            font-size: 9px;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid #000;
+            }
+
+            span {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
