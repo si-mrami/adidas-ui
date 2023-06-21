@@ -1,0 +1,42 @@
+.series {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 19px;
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+
+    .filter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        margin-top: 2rem;
+
+        .item {
+            position: relative;
+
+            img {
+                width: 19rem;
+                height: 15rem;
+                object-fit: cover;
+                cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    width: 20rem;
+                    height: 16rem;
+                }
+            }
+            
+            span {
+                position: absolute;
+                color: #ffffff;
+                top: 50%;
+                left: 30%;
+            }
+        }
+    }
+}

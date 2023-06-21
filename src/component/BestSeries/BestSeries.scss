@@ -1,0 +1,17 @@
+.best {
+    height: 30rem;
+
+    .Slider{
+        display: flex;
+        gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        .slick-arrow {
+            background-color: crimson;
+            width: 2rem;
+            height: 3rem;
+        }
+    }
+}

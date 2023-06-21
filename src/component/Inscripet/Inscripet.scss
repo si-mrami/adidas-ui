@@ -1,0 +1,36 @@
+.inscrpet {
+    background-color: rgb(73, 23, 200);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    color: #fff;
+
+    span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        font-size: 19px;
+        margin-top: 1rem;
+    }
+
+    .button {
+        border: 1px solid #fff;
+        width: 5rem;
+        height: 1.7rem;
+        margin-bottom: 1rem;
+
+        button {
+            font-size: 9px;
+            background-color: #fff;
+            border: none;
+            width: 4.8rem;
+            height: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}
