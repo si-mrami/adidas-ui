@@ -4,6 +4,7 @@ import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import ButtomNavbar from "./ButtomNavbar";
 import { useState} from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -20,13 +21,17 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="top">
+		<Link to="/">
         <div className="left">
           <img src="/public/add.svg" alt="" />
         </div>
+		</Link>
         <div className="center">
           <div className="menu">
             <span className="menu_item" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>HOMMES</span>
-            <span onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>FEMMES</span>
+			<Link className="Link" to="/FEMMES">
+			<span onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>FEMMES</span>
+			</Link>
             <span onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>ENFANTS</span>
             <span onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{ fontFamily: "'Cairo', sans-serif" }}>SPORTS</span>
             <span onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{ fontFamily: "'Cairo', sans-serif" }}>

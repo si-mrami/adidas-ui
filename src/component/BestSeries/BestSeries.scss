@@ -1,19 +1,116 @@
-.best {
-    height: 30rem;
+.bestSeries {
+  width: 100%;
+  margin-bottom: 1rem;
 
-    .Slider{
-        display: flex;
-        gap: 30px;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        
-        .slick-arrow {
-            margin-left: 2rem;
-            margin-right: 2rem;
-            background-color: crimson;
-            width: 2rem;
-            height: 3rem;
-        }
+  h1 {
+    font-size: 19px;
+	padding: 3rem;
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .arrowLeft,
+    .arrowRight {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: #000;
+	  color: #fff;
+      cursor: pointer;
+      z-index: 2;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #fff;
+		color: #000;
+      }
     }
+
+    .arrowLeft {
+    left: 2px;
+	width: 4rem;
+	height: 3.5rem;
+	border: 1px solid #000;
+    }
+
+    .arrowRight {
+      right: 0;
+	  width: 4rem;
+	  height: 3.5rem;
+	  border: 1px solid #000;
+    }
+
+    .container {
+      display: flex;
+      overflow: hidden;
+      padding: 0 10px;
+      margin-left: 40px;
+      margin-right: 40px;
+
+      .item {
+        flex-shrink: 0;
+        width: 200px;
+        margin-right: 10px;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+        padding: 10px;
+		transition: all 1s ease;
+
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+          cursor: pointer;
+		  position: relative;
+        }
+
+		.promo {
+			font-size: 9px;
+			position: absolute;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 2rem;
+			height: 1rem;
+			top: 15px;
+			left: 2px;
+			transform: rotateZ(-90deg);
+		}
+
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          gap: 30px;
+
+          span {
+            font-size: 12px;
+          }
+
+          .Name {
+            font-weight: bold;
+          }
+          .price {
+            display: flex;
+            gap: 25px;
+            .prc {
+              text-decoration: line-through;
+              color: red;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

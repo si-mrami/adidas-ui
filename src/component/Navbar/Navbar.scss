@@ -1,5 +1,5 @@
 .navbar {
-  margin-top: 2rem;
+//   margin-top: 2rem;
   .top {
     display: flex;
     justify-content: space-between;
@@ -23,8 +23,13 @@
         justify-content: space-between;
         gap: 20px;
 
+		.Link {
+			text-decoration: none;
+		}
+
         span {
           cursor: pointer;
+		  color: #000;
           &:hover {
             border-bottom: 2px solid #000;
           }
@@ -60,11 +65,15 @@
         align-items: center;
         background-color: aliceblue;
         border-radius: 5px;
+		width: 20vw;
+		justify-content: space-between;
 
         input {
           border: none;
           background-color: inherit;
+		  padding: 0.5rem;
           font-size: 12px;
+		  width: 100%;
           color: #000;
           font-family: "Cairo", sans-serif;
 
@@ -106,11 +115,11 @@
   transition: all 0.5s ease;
   position: fixed;
   cursor: pointer;
-  background-color: aliceblue;
-  z-index: 9999;
-  margin-top: 2.7rem;
+  background-color: #fff;
+  z-index: 999;
+  margin-top: -1.3rem;
 
-  
+
   &.active {
       display: flex;
     }
