@@ -1,6 +1,5 @@
 .all {
-	margin-top: 6rem;
-	background-color: crimson;
+	margin-top: 9rem;
 	height: 100%;
 
 	h1 {
@@ -27,13 +26,13 @@
 				cursor: pointer;
 				display: flex;
 				align-items: center;
-				flex-direction: column;
 				gap: 7px;
 				font-size: 11px;
 				color: #808080;
 				position: relative;
-				width: 8rem;
-				z-index: 990;
+				width: 100%;
+				z-index: 99;
+				height: 2rem;
 
 				.listTop {
 					display: flex;
@@ -42,14 +41,22 @@
 
 				.bottomList {
 					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
 					gap: 20px;
 					transition: all 1s ease;
 					position: absolute;
-					top: 20px;
+					top: 35px;
 					width: 8rem;
 					height: 12rem;
 					border: 1px solid #000;
-					background-color: aqua;
+					background-color: #fff;
+					color: #000;
+
+					&.active {
+						display: none;
+					}
 				}
 			}
 		}
