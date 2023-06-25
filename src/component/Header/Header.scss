@@ -1,5 +1,8 @@
 .header {
     display: flex;
+	height: 70vh;
+	margin-top: 9rem;
+	background-color: rgb(241, 239, 239);
 
     .left {
         flex: 80%;
@@ -10,7 +13,6 @@
         align-items: center;
         flex-direction: column;
         gap: 30px;
-        margin-top: 2rem;
 
         p {
             font-size: 10px;
@@ -36,7 +38,6 @@
     }
     .right {
         flex: 80%;
-        background-color: rgba(213, 220, 226, 0.919);
-        margin-top: 4rem;
+
     }
 }

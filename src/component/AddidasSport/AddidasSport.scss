@@ -1,0 +1,99 @@
+.bestSeries {
+	width: 100%;
+	margin-bottom: 1rem;
+
+	h1 {
+	  font-size: 19px;
+	  padding: 3rem;
+	}
+
+	.slider {
+	  display: flex;
+	  align-items: center;
+	  position: relative;
+
+	  .ArrowLeft,
+	  .ArrowRight {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: #fff;
+		color: #000;
+		cursor: pointer;
+		z-index: 2;
+		transition: background-color 0.3s;
+
+		&:hover {
+		  background-color: #000;
+		  color: #fff;
+		}
+	  }
+
+	  .ArrowLeft {
+	  left: 2px;
+	  width: 4rem;
+	  height: 3.5rem;
+	  border: 1px solid #000;
+	  }
+
+	  .ArrowRight {
+		right: 0;
+		width: 4rem;
+		height: 3.5rem;
+		border: 1px solid #000;
+	  }
+
+	  .container {
+		display: flex;
+		overflow: hidden;
+		padding: 0 10px;
+		margin-left: 40px;
+		margin-right: 40px;
+
+		.items {
+		  flex-shrink: 0;
+		  width: 280px;
+		  height: 15rem;
+		  margin-right: 10px;
+		  background-color: #f2f2f2;
+		  border-radius: 8px;
+		  padding: 10px;
+		  transition: all 1s ease;
+		  cursor: pointer;
+
+		  img {
+			width: 100%;
+			height: 9rem;
+			object-fit: cover;
+			margin-bottom: 4px;
+			border-radius: 10px;
+			cursor: pointer;
+		  }
+
+		  .bottom {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+			gap: 5px;
+
+			h1 {
+				font-size: 10px;
+				margin-top: -3rem;
+			}
+
+			span {
+			  font-size: 8px;
+			  margin-top: -3rem;
+			}
+		  }
+		}
+	  }
+	}
+  }

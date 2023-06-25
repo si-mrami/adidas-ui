@@ -1,0 +1,27 @@
+.about {
+	background-color: rgb(241, 239, 239);
+	display: flex;
+	justify-content: space-between;
+	padding: 0.4rem;
+	gap: 40px;
+
+	.left, .right {
+		span {
+			font-size: 18px;
+			display: flex;
+			font-family: 'Quicksand', sans-serif;
+		}
+
+		p {
+			font-size: 9px;
+			padding: 0.6rem;
+			font-family: 'Quicksand', sans-serif;
+
+			small {
+				border-bottom: 1px solid #000;
+				cursor: pointer;
+
+			}
+		}
+	}
+}

@@ -1,15 +1,56 @@
 .all {
+	margin-top: 6rem;
+	background-color: crimson;
+	height: 100%;
 
+	h1 {
+		padding: 1rem;
+		font-size: 18px;
+		margin-left: 2.9rem;
+
+	}
 	.wrraper {
 		display: flex;
-		flex-wrap: nowrap;
-		gap: 20px;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 
-		.item {
+		.topSection {
+			width: 90%;
+			display: flex;
+			padding: 0.6rem;
+			gap: 25px;
+			align-items: center;
+			border-top: 1px solid #c8cccd;
 
-			.itemTop {
+			.itemButton {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				gap: 7px;
+				font-size: 11px;
+				color: #808080;
+				position: relative;
+				width: 8rem;
+				z-index: 990;
 
+				.listTop {
+					display: flex;
+					align-items: center;
+				}
 
+				.bottomList {
+					display: flex;
+					gap: 20px;
+					transition: all 1s ease;
+					position: absolute;
+					top: 20px;
+					width: 8rem;
+					height: 12rem;
+					border: 1px solid #000;
+					background-color: aqua;
+				}
 			}
 		}
 	}

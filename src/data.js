@@ -74,3 +74,42 @@ export const sliderProduct = [
 		Pors: "-50 %",
 	},
 ]
+
+export const sportProduct = [
+	{
+		id: 1,
+		titel: "WHAT IS A PENALTY KICK IN SOCCER",
+		desc: "Are you curious about what a penalty kick is, when it happens and what the rules are? Read about what they are and when they happen with adidas.",
+		Img: "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/what-are-soccer-penalty-kicks-blog-thumbnail-d_221-952992.jpg",
+	},
+	{
+		id: 2,
+		titel: "OFFSIDES IN SOCCER: EXPLAINED",
+		desc: "Watching a match? Get the scoop on the rules of the game, starting with the offside soccer rule, explained by adidas.",
+		Img: "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/soccer-offside-rules-masthead-d_221-953964.jpg",
+	},
+	{
+		id: 3,
+		titel: "THE ONLY ULTRABOOST SIZING GUIDE YOU’LL EVER NEED",
+		desc: "Upgrade your runs with the all new adidas Ultraboost Light. Read our size guide to discover the differences between the different shoes in the Ultraboost line.",
+		Img: "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/ultraboost-light-size-guide-blog-header-d_221-992375.jpg",
+	},
+	{
+		id: 4,
+		titel: "THE DEFINITIVE ADIDAS FORUM SIZE GUIDE",
+		desc: "Curious about where to start with adidas Forum sizing? Look no further to learn about how the iconic sneakers fit before even trying them on.",
+		Img: "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/2021/11/forum-size-guide-masthead-d_221-807066.jpg",
+	},
+	{
+		id: 5,
+		titel: "WHAT KIND OF SHOES SHOULD YOU WEAR TO THE GYM",
+		desc: "Get the right support for your training session. Find out the best workout shoes for the gym with adidas’ top picks and advice.",
+		Img: "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/what-shoes-to-wear-to-the-gym-masthead-d_221-927747.jpg",
+	},
+	{
+		id: 6,
+		titel: "",
+		desc: "",
+		Img: "",
+	},
+]
